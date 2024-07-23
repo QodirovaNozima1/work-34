@@ -1,0 +1,69 @@
+.hero{
+    background-color: $bg-py;
+    width: 100%;
+    background-image: url("/assets/bg_img_hero.svg");
+    background-repeat: no-repeat;
+    background-position: right top ;
+    height: 900px;
+    &__wrapper{
+        cursor: pointer;
+        display: flex;
+        padding-top: 200px;
+        align-items: center;
+    }
+    &__content{
+        width: 50%;
+    }
+    &__desc{
+        font-size: 48px;
+        color: $bg-text;
+        font-weight: 600;
+        padding-bottom: 20px;
+        b{
+            color: $bg-hover;
+        }
+    }
+    &__info{
+        font-size: 18px;
+        color: rgba(126, 125, 122, 1);
+        padding-bottom: 30px;
+    }
+    .colorful{
+        width: 170px;
+        height: 46px;
+        border-radius: 33px;
+        color: white;
+        font-weight: 500;
+        border: none;
+        background: rgba(47, 33, 5, 1);
+        i{
+            background: $bg-hover;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 6px;
+            padding-bottom: 5px;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 25px;
+            &:hover{
+                background: white;
+                color: $bg-hover;
+            }
+        }
+    }
+    .no-color{
+        width: 170px;
+        height: 46px;
+        border-radius: 33px;
+        color: white;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        color: $bg-hover;
+        transition: .3s;
+        &:hover{
+            border: 3px solid rgb(58, 45, 17) ;
+        }
+    }
+}

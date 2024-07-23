@@ -1,0 +1,88 @@
+.popular{
+    padding-top: 100px;
+    &__box{
+        width: 100%;
+        height: 350px;
+        background: #F9D9AA;
+        margin-top: -150px;
+        margin-bottom: 100px;
+        border-radius: 35px;
+        padding: 40px;
+    }
+    &__wrapper{
+        padding: 40px;
+        display: flex;
+        gap: 30px;
+    }
+    &__card{
+        width: 343px;
+        height: 373px;
+        padding: 20px;
+        border-radius: 20px;
+        background: white;
+        margin-top: -200px;
+        box-shadow: 0 0 20px 0 gainsboro;
+        .star{
+            position: absolute;
+            z-index: 11;
+            margin-left: 20px;
+            margin-top: 20px;
+            background: white;
+            border-radius: 20px;
+            padding: 5px;
+            border: none;
+            box-shadow: 0 0 7px 0 gainsboro;
+            i{
+                color: yellow;
+            }
+        }
+        img{
+            position: relative;
+            width: 100%;
+            border-radius: 20px;
+            
+        }
+    }
+    &__desc{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 19px;
+        margin-bottom: 12px;
+    }
+    &__options{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn{
+        display: flex;
+        gap: 20px;
+    }
+    .type{
+        width: 64px;
+        height: 32px;
+        background: transparent;
+        border: 1px solid rgb(254, 185, 120);
+        color: $bg-hover;
+        border-radius: 10px;
+        transition: .3s;
+        &:hover{
+            border: 2px solid rgb(255, 131, 15);
+            color: rgb(255, 129, 12);
+        }
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $bg-hover;
+        padding: 10px;
+        color: white;
+        transition: .4s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
