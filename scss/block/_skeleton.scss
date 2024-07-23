@@ -1,0 +1,169 @@
+.skeleton{
+    width: 100%;
+    padding: 55px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skeleton__item{
+    width: 260px;
+    padding: 10px;
+}
+.skeleton__img{
+    width: 100%;
+    height:200px;
+    background: #ddd;
+    border-radius:14px;
+}
+.skeleton__line{
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+}
+.skeleton__line:nth-child(3){
+    width: 80%;
+}
+.skeleton__line:nth-child(4){
+    width: 60%;
+}
+.skeleton__anime{
+    background: linear-gradient(90deg, #ddd,#f7f7f7,#ddd);
+    background-size: 200%;
+    animation: skeleton .9s linear 0s infinite ;
+}
+@keyframes skeleton{
+    to{
+        background-position: 200%;
+    }
+}
+.api {
+    margin-top: 80px;
+}
+
+
+
+.api button:hover{
+    box-shadow: 0 0 10px rgba(213, 213, 213, 0.762);
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box{
+    transition: .3s;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(220, 220, 220, 0.571);
+}
+.box:hover{
+     box-shadow: 0 0 20px 0 gainsboro;
+}
+
+.info{
+    font-size: 16px;
+    color: #0009;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .collection {
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    padding: 10px 50px;
+    gap: 20px;
+    cursor: pointer;
+    /* font-size: 19px; */
+  }
+  .collection li{
+    width: 200px;
+    padding: 7px;
+    border-radius: 6px;
+    transition: .4s;
+  }
+  .collection li :hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 6px;
+    padding: 7px;
+  }
+  .item{
+    white-space: nowrap;
+    transition: .3s;
+  }
+  .item:hover{
+    color:$bg-sy;
+    transform: scale(0.9);
+  }
+  .photo{
+    position: relative;
+    z-index: 10;
+    i{
+        position: absolute;
+        left: 280px;
+        bottom: 280px;
+        z-index: 11;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        transition: .3s;
+        
+      }
+    i:hover{
+          color: red;
+    }
+    
+  }
+.card img{
+    width: 100%;
+    cursor: pointer;
+    height: 300px;
+    transition: .4s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.card button{
+    transition: .3s;
+    width: 200px;
+    height: 38px;
+    background:rgb(255, 210, 142);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.seemore{
+    cursor: pointer;
+    margin-left: 30%;
+    background:rgb(255, 210, 142);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+    transition: .3s;
+}
