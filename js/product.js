@@ -21,7 +21,7 @@ function createContent(data) {
     console.log("ok");
     console.log(data);
     content.innerHTML = `
-div class="container"> 
+<div class="container"> 
     <div class="content__box"> 
         <div class="content__img">
             <div>
