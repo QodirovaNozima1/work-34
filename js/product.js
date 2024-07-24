@@ -45,7 +45,7 @@ function createContent(data) {
                 <p>${data.availabilityStatus}</p>
                  <p>${data.sku}</p>
                 </div>
-                <img src="${data.meta.qrCode}" alt="">
+                
             </div>
           <button class ="now">Buy now</button>
        </div>
