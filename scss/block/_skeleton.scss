@@ -45,7 +45,7 @@
 
 
 .api button:hover{
-    box-shadow: 0 0 10px rgba(213, 213, 213, 0.762);
+    box-shadow: 0 0 10px rgba(168, 166, 166, 0.762);
     cursor: pointer;
 }
 .wrapper{
@@ -66,10 +66,9 @@
     transition: .3s;
     padding: 20px;
     border-radius: 14px;
-    border: 1px solid rgba(220, 220, 220, 0.571);
 }
 .box:hover{
-     box-shadow: 0 0 20px 0 gainsboro;
+     box-shadow: 0 0 20px 0 rgb(207, 207, 207);
 }
 
 .info{
@@ -98,18 +97,11 @@
     border-radius: 6px;
     transition: .4s;
   }
-  .collection li :hover{
-    box-shadow: 0 0 10px 0 gainsboro;
-    border-radius: 6px;
-    padding: 7px;
-  }
   .item{
     white-space: nowrap;
-    transition: .3s;
   }
   .item:hover{
     color:$bg-sy;
-    transform: scale(0.9);
   }
   .photo{
     position: relative;

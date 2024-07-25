@@ -6,7 +6,8 @@
     padding-top: 20px;
     padding-bottom:20px;
     width: 100%;
-    background: rgba(246, 235, 218, 0.849);
+    backdrop-filter: blur(4px);
+    background: rgba(248, 236, 219, 0.779);
     z-index: 11;
 }
 .navbar{
